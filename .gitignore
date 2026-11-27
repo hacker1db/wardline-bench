@@ -1,0 +1,11 @@
+node_modules/
+.security/
+ui/.svelte-kit/
+ui/build/
+ui/.vercel/
+.vercel/
+.env*
+# Held-out scored suite and anything that embeds its answer key
+bench/tasks/private/
+results/
+ui/src/lib/server/results.json

@@ -1,0 +1,9 @@
+name: wardline-bench
+paths:
+  - bench
+  - ui/src
+paths-ignore:
+  - "**/node_modules"
+  - ui/.svelte-kit
+  - ui/build
+  - results
