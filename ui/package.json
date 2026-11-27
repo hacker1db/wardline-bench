@@ -16,7 +16,8 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"sync-data": "node -e \"const f=require('fs'),d='src/lib/server/results.json';if(f.existsSync('../results/index.json'))f.copyFileSync('../results/index.json',d);else if(!f.existsSync(d))f.writeFileSync(d,JSON.stringify({generated:new Date(0).toISOString(),runs:[]}))\"",
 		"prebuild": "npm run sync-data",
-		"predev": "npm run sync-data"
+		"predev": "npm run sync-data",
+		"precheck": "npm run sync-data"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^7.0.5",
